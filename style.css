@@ -2,36 +2,51 @@ body{
     margin: 0;
 }
 
+/* headr */
 header{
 background-color: #adb5bd;
-height: 200px;
+height: 180px;
 position: absolute;
 width: 100%;
 display: flex;
-
+display: flex;
+justify-content: center;
 }
 
 .header-menu-ul{
-    width: 100%;
+    width: 75%;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-li{
+header li{
     font-size: larger;
     transition: 200ms;
+    position: relative;
+    right: 20px;
+    border: soli;
 }
-li:hover{
+header li:hover{
     color: rgb(218, 218, 218);
 }
 
-.hiding-header-li2{
-    display: none;
+.header-ul-img{
+    width: 150px;
 }
 
+@media screen and (max-width: 990px) {
+    .header-ul-img{
+        display: none;
+    }
 
-img{
-    width: 150px;
+    .header-menu-ul{
+        width: 100%;
+    }
+
+    header{
+        height: 100px;
+    }
+    
 }
