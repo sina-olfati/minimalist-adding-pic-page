@@ -55,7 +55,6 @@ header li:hover{
 section{
     background-color: #ced4da;
     width: 100%;
-
     position: relative;
     top: 170px;
 }
@@ -87,4 +86,10 @@ section .section-img-packs div img{
 
 section .section-img-packs div h4{
     color: #013d79;
+}
+
+@media screen and (max-width: 990px) {
+    section{
+        top: 100px;
+    }
 }

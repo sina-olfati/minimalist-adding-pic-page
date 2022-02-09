@@ -27,6 +27,7 @@ var container = document.getElementById("section-img-packs")
 var names = document.getElementById("name-input")
 
 function addImgPack(){
+    if(url.value != "" && names.value != ""){
     var addDiv = document.createElement("div")
     container.appendChild(addDiv)
     var addImg = document.createElement("img")
@@ -35,6 +36,12 @@ function addImgPack(){
     var addh4 = document.createElement("h4")
     addh4.innerHTML = names.value
     addDiv.appendChild(addh4)
+    } else{
+        alert("fill url and name")
+    }
+    url.value = ""
+    names.value = ""
 }
 
 
+// && container != ""
