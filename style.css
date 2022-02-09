@@ -50,7 +50,7 @@ header li:hover{
     
 }
 
-/* section */
+/* section image packs */
 
 section{
     background-color: #ced4da;
@@ -88,8 +88,82 @@ section .section-img-packs div h4{
     color: #013d79;
 }
 
+
+/* section pack adder */
+/* 1- h3 and image addresses */
+.section-img-adder{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-img-adder h3{
+    color: #9b7d1d;
+    font-family: sans-serif;
+}
+
+.section-img-adder .img-addresses{
+width: 40%;
+display: flex;
+justify-content: space-between;
+margin: 15px;
+}
+
+.section-img-adder .img-addresses input{
+padding: 5px;
+border: none;
+font-size: 15px;
+border-radius: 15%;
+background-color: #e9ecef;
+color: #000000;
+transition: 0.1s;
+}
+
+.section-img-adder .img-addresses input:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 2px rgba(71, 71, 71, 0.575);
+}
+
+.section-img-adder .adding-part{
+
+}
+.section-img-adder .adding-part #url-input{
+height: 25px;
+width: 220px;
+border: none;
+text-align: center;
+}
+
+.section-img-adder .adding-part #name-input{
+    height: 25px;
+    width: 220px;
+    border: none;
+    text-align: center;
+}
+
+.section-img-adder .adding-part .add-img-button {
+margin: 20px;
+padding: 5px;
+width: 80px;
+border: none;
+font-size: 25px;
+font-family: fantasy;
+border-radius: 25px;
+background-color: #9a9b9c;
+color: #000000;
+transition: 0.2s;
+}
+
+.section-img-adder .adding-part .add-img-button:hover{
+background-color: rgb(235, 235, 235);
+}
+
 @media screen and (max-width: 990px) {
     section{
         top: 100px;
     }
+    .section-img-adder .img-addresses{width: 60%;}
 }
