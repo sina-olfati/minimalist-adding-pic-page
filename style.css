@@ -6,7 +6,6 @@ body{
 header{
 background-color: #adb5bd;
 height: 180px;
-position: absolute;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -54,9 +53,7 @@ header li:hover{
 
 section{
     background-color: #ced4da;
-    width: 100%;
-    position: relative;
-    top: 170px;
+    width: 100%;    
 }
 
 section .section-img-packs{
@@ -162,8 +159,36 @@ background-color: rgb(235, 235, 235);
 }
 
 @media screen and (max-width: 990px) {
-    section{
-        top: 100px;
-    }
     .section-img-adder .img-addresses{width: 60%;}
+}
+
+
+/* footer */
+
+footer{
+    height: 280px;
+    background: #9fabb6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.information{
+    width: 40%;
+    padding-top: 40px;
+}
+
+.contact{
+    width: 40%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.contact img{
+    margin:0 5px;
+    width: 30px;
+    transition: 0.1s;
+}
+
+.contact img:hover{
+    transform: scale(1.2);
 }
