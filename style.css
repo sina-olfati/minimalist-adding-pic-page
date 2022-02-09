@@ -60,14 +60,13 @@ section{
     top: 170px;
 }
 
-section .section-imgs{
+section .section-img-packs{
 display: flex;
 justify-content: space-around;
 }
 
-section .section-imgs div{
+section .section-img-packs div{
     margin: 20px;
-    border: soli;
     width: 180px;
     text-align: center;
     border-radius: 5px;
@@ -75,15 +74,15 @@ section .section-imgs div{
     transition: 0.5s;
 }
 
-section .section-imgs div:hover{
+section .section-img-packs div:hover{
     transform: scale(1.03) rotate(2deg);
     box-shadow: 0px 0px 5px 1px rgb(180, 180, 180);
 }
 
-section .section-imgs div img{
+section .section-img-packs div img{
     width: 150px;
 }
 
-section .section-imgs div h4{
- color: #013d79;
+section .section-img-packs div h4{
+    color: #013d79;
 }
