@@ -55,7 +55,7 @@ header li:hover{
 section{
     background-color: #ced4da;
     width: 100%;
-    height: 400px;
+
     position: relative;
     top: 170px;
 }
@@ -63,6 +63,7 @@ section{
 section .section-img-packs{
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 }
 
 section .section-img-packs div{
@@ -81,6 +82,7 @@ section .section-img-packs div:hover{
 
 section .section-img-packs div img{
     width: 150px;
+    margin: 10px;
 }
 
 section .section-img-packs div h4{

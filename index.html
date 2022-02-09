@@ -13,7 +13,7 @@
         <ul class="header-menu-ul">
             <li>templates</li>
             <li>apps</li>
-            <li><a href="https://www.qries.com/"><img src="/bird.png" alt="" class="header-ul-img"></a></li>
+            <li><a href="https://www.qries.com/"><img src="images/bird.png" alt="" class="header-ul-img"></a></li>
             <li>about us</li>
             <li>our history</li>
         </ul>
@@ -22,12 +22,7 @@
 <!-- section -->
 
     <section>
-    <div class="section-img-packs">
-        <div>
-            <img src="images/bird.png" alt="">
-            <h4>name</h4>
-        </div>
-        
+    <div class="section-img-packs" id="section-img-packs">
     </div>
 
 
@@ -39,12 +34,13 @@
             <input type="button" value="shrek" onclick="addUrl(4)">
             <input type="button" value="jelly fish" onclick="addUrl(5)">
             <input type="button" value="owl" onclick="addUrl(6)">
+            <input type="button" value="bird" onclick="addUrl(7)">
         </div>
 
         <div class="adding-part">
 <input type="text" placeholder="img url" id="url-input"> 
-<input type="text" placeholder="name"> 
-<input type="button" value="add">
+<input type="text" placeholder="name" id="name-input"> 
+<input type="button" value="add" onclick="addImgPack()">
         </div>
     </div>
 
