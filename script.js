@@ -24,7 +24,7 @@ function addUrl(x) {
 
 // adding the image pack with clicking add button
 var container = document.getElementById("section-img-packs")
-var names = document.getElementById("name-input").value
+var names = document.getElementById("name-input")
 
 function addImgPack(){
     var addDiv = document.createElement("div")
@@ -33,6 +33,8 @@ function addImgPack(){
     addImg.src = url.value
     addDiv.appendChild(addImg)
     var addh4 = document.createElement("h4")
-    addh4.innerText = names.value
+    addh4.innerHTML = names.value
     addDiv.appendChild(addh4)
 }
+
+
