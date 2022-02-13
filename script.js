@@ -25,9 +25,11 @@ function addUrl(x) {
 // adding the image pack with clicking add button
 var container = document.getElementById("section-img-packs")
 var names = document.getElementById("name-input")
-
+// var r = /p/
+// /\.[jp][pn]e?g$/i
 function addImgPack(){
-    if(url.value != "" && names.value != ""){
+    // var format = r.test(container.value)
+    if(url.value != "" && names.value != "" /* && format */){
     var addDiv = document.createElement("div")
     container.appendChild(addDiv)
     var addImg = document.createElement("img")
@@ -36,12 +38,11 @@ function addImgPack(){
     var addh4 = document.createElement("h4")
     addh4.innerHTML = names.value
     addDiv.appendChild(addh4)
-    } else{
+    url.value = ""
+    names.value = ""}
+    // else if(!format){
+    //     alert("your image format should be png, jpg or jpeg")
+    else{
         alert("fill url and name")
     }
-    url.value = ""
-    names.value = ""
 }
-
-
-// && container != ""
